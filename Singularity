@@ -10,5 +10,9 @@ MAINTAINER TRF
 %environment
     
 %post
-    echo "Installing tmsu via pacman..."
-    pacman -Sy tmsu    
+    echo "Installing tmsu via yet another yaourt..."
+    pacman -Sy git
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si
+    yay -S tmsu
