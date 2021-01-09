@@ -10,4 +10,5 @@ MAINTAINER TRF
 %environment
     
 %post
+    echo "Installing tmsu via pacman..."
     pacman -S tmsu    
