@@ -11,8 +11,8 @@ MAINTAINER TRF
     
 %post
     echo "Installing tmsu via yet another yaourt..."
-    pacman -Sy git
+    pacman -Syu --noconfirm git base-devel
     git clone https://aur.archlinux.org/yay.git
     cd yay
     makepkg -si
-    yay -S tmsu
+    yay -Sy --noconfirm tmsu
