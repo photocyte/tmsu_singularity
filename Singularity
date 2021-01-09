@@ -11,4 +11,4 @@ MAINTAINER TRF
     
 %post
     echo "Installing tmsu via pacman..."
-    pacman -S tmsu    
+    pacman -Sy tmsu    
